@@ -5,7 +5,7 @@ public class BallController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-    [SerializeField] private float force = 1f;
+    [SerializeField] private float force = 100000f;
     [SerializeField] private InputManager inputManager;
     private bool isBallLaunched;
     private Rigidbody ballRB;
