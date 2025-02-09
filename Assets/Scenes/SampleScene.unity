@@ -513,6 +513,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 475073120}
+  - {fileID: 1129027573}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!54 &203874545
@@ -578,7 +579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputManager: {fileID: 1965821132}
-  speed: 10
+  speed: 20
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1192,7 @@ GameObject:
   - component: {fileID: 1129027569}
   - component: {fileID: 1129027574}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,13 +1307,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129027568}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.28077468, z: -0, w: 0.9597737}
-  m_LocalPosition: {x: 19.298637, y: 0.48, z: 8.032305}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.8499997, y: -0.51100004, z: 0.051999807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -32.613, z: 0}
+  m_Father: {fileID: 203874544}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1129027574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,6 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 10
+  ballAnchor: {fileID: 0}
   inputManager: {fileID: 1965821132}
 --- !u!1001 &1153461011
 PrefabInstance:
@@ -1993,7 +1995,6 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
-  - {fileID: 1129027573}
   - {fileID: 335376446}
   - {fileID: 1965821133}
   - {fileID: 1194853570}
