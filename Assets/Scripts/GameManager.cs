@@ -25,23 +25,28 @@ public class GameManager : MonoBehaviour
         SetPins();
     }
 
-    private void SetPins()
+private void SetPins()
+{
+    if (pinObjects != null)
     {
-        if (pinObjects)
+        foreach (Transform child in pinObjects.transform)
         {
-            foreach (Transform child in pinObjects.transform)
-                Destroy(child.gameObject);
+            Debug.Log("Destroying child: " + child.name);  // Add this line
+            Destroy(child.gameObject);
         }
+        Debug.Log("Destroying parent: " + pinObjects.name);  // Add this line
         Destroy(pinObjects);
+    }
 
-    pinObjects = Instantiate(pinCollection,pinAnchor.transform.position,Quaternion.identity,transform);
-    fallTriggers = FindObjectsByType<FallTrigger>(FindObjectsSortMode.None);
 
-    foreach (FallTrigger pin in fallTriggers) {
+    pinObjects = Instantiate(pinCollection, pinAnchor.transform.position, Quaternion.identity, transform);
+
+    fallTriggers = FindObjectsByType<FallTrigger>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+    foreach (FallTrigger pin in fallTriggers)
         pin.OnPinFall.AddListener(IncrementScore);
-    }
+}
 
-    }
+
 
     private void IncrementScore()
     {
