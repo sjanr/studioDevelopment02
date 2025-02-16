@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 203874546}
   - component: {fileID: 203874545}
   - component: {fileID: 203874547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 279118038}
   - component: {fileID: 279118037}
   - component: {fileID: 279118036}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: IndicatorModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 475073120}
   - component: {fileID: 475073123}
   - component: {fileID: 475073122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1185,7 +1185,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 603288596}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BallAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1217,7 +1217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 608734274}
   - component: {fileID: 608734271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1254,8 +1254,8 @@ Transform:
   m_GameObject: {fileID: 608734270}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.23, y: 0.468, z: -15.47}
-  m_LocalScale: {x: 0.27076456, y: 1, z: 6.862454}
+  m_LocalPosition: {x: 27.23, y: 0.85, z: -15.47}
+  m_LocalScale: {x: 0.4677187, y: 1.8364, z: 6.862454}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1385,7 +1385,7 @@ GameObject:
   - component: {fileID: 1129027570}
   - component: {fileID: 1129027569}
   - component: {fileID: 1129027574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1762,7 +1762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1582321774}
   - component: {fileID: 1582321771}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,8 +1799,8 @@ Transform:
   m_GameObject: {fileID: 1582321770}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.076, y: 0.468, z: -15.47}
-  m_LocalScale: {x: 0.27076456, y: 1, z: 6.862454}
+  m_LocalPosition: {x: 17.076, y: 0.85, z: -15.47}
+  m_LocalScale: {x: 0.4677187, y: 1.8364, z: 6.862454}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2133,7 +2133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125610152}
   - component: {fileID: 2125610153}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LaunchIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
