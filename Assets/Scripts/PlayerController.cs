@@ -18,8 +18,6 @@ public class PlayerController : MonoBehaviour
         Debug.Log($"MovePlayer called with direction: {direction}");
         Vector3 moveDirection = new(direction.x, 0f, direction.y);
         rb.AddForce(speed * moveDirection);
-
-        Debug.Log($"Speed: {rb.linearVelocity.magnitude}");
     }
 
     // Update is called once per frame
