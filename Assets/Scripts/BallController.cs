@@ -8,6 +8,7 @@ public class BallController : MonoBehaviour
     [SerializeField] private float force = 1f;
     [SerializeField] private Transform ballAnchor;
     [SerializeField] private InputManager inputManager;
+    [SerializeField] private Transform launchIndicator;
     private bool isBallLaunched;
     private Rigidbody ballRB;
     void Start() {
@@ -23,14 +24,10 @@ public class BallController : MonoBehaviour
         if (isBallLaunched) return;
         isBallLaunched = true;
         transform.parent = null;
+        ballRB.AddForce(launchIndicator.up * force, ForceMode.Impulse);
+        launchIndicator.gameObject.SetActive(false);
         ballRB.isKinematic = false;
         ballRB.AddForce(transform.forward * force, ForceMode.Impulse);
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
