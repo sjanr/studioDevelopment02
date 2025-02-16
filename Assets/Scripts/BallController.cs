@@ -1,3 +1,4 @@
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,7 +14,9 @@ public class BallController : MonoBehaviour
     private Rigidbody ballRB;
     void Start() {
         ballRB = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.Locked;
         inputManager.OnSpacePressed.AddListener(LaunchBall);
+        ResetBall();
         transform.parent = ballAnchor;
         transform.localPosition = Vector3.zero;
         ballRB.isKinematic = true;
@@ -29,5 +32,12 @@ public class BallController : MonoBehaviour
         launchIndicator.gameObject.SetActive(false);
         // ballRB.AddForce(transform.forward * force, ForceMode.Impulse);
 
+    }
+    public void ResetBall() {
+        isBallLaunched = false;
+        ballRB.isKinematic = true;
+        launchIndicator.gameObject.SetActive(true);
+        transform.parent = ballAnchor;
+        transform.localPosition = Vector3.zero;
     }
 }

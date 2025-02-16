@@ -2383,6 +2383,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5790bfbf2460c454fbbc4d368802997d, type: 3}
+--- !u!1 &1873967558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1873967559}
+  m_Layer: 0
+  m_Name: PinAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1873967559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873967558}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 800.2138, y: 333.6677, z: -1033.1771}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965821131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,6 +2450,9 @@ MonoBehaviour:
   OnSpacePressed:
     m_PersistentCalls:
       m_Calls: []
+  OnResetPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1965821133
 Transform:
   m_ObjectHideFlags: 0
@@ -2447,7 +2481,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  scoreText: {fileID: 0}
+  ball: {fileID: 1129027574}
+  pinCollection: {fileID: 1194853569}
+  pinAnchor: {fileID: 1873967559}
+  inputManager: {fileID: 1965821132}
+  scoreText: {fileID: 1824053696}
 --- !u!1 &2125610151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2635,3 +2673,4 @@ SceneRoots:
   - {fileID: 1582321774}
   - {fileID: 1506697750}
   - {fileID: 1212001910}
+  - {fileID: 1873967559}
