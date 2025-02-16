@@ -8,7 +8,7 @@ public class LaunchIndicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.up = freeLookCamera.transform.up;
+        transform.forward = freeLookCamera.transform.forward;
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y,0);
     }
 }
